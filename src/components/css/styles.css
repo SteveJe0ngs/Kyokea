@@ -16,7 +16,8 @@ ul {
     list-style: none;
 }
 
-a {
+Link {
+    color: #474747;
     text-decoration: none;
     outline: none;
 }

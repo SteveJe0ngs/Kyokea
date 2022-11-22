@@ -1,6 +1,6 @@
 import '../css/Header.css'
 import logo from '../../image/logo.png';
-
+import {BrowserRouter as Router, Link} from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -12,13 +12,15 @@ const Header = () => {
 
                 <nav>
                     <ul>
-                        <li>메뉴 1</li>
-                        <li>메뉴 2</li>
+                        <li><Link to={"/"}>HOME</Link></li>
+                        <li><a href="/about">ABOUT</a></li>
+                        <li><a href="/explore">EXPLORE</a></li>
+                        <li>MORE</li>
                     </ul>
                 </nav>
 
                 <div>
-                    로그인 / 회원가입
+                    SIGN IN / SIGN UP
                 </div>
             </div>
         </header>
