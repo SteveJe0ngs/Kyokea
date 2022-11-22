@@ -1,0 +1,15 @@
+.footer{
+    height: 70px;
+    margin-top: auto;
+    background-color: #dde0ea;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.footer > detail {
+    width:600px;
+	height:100%;
+}
