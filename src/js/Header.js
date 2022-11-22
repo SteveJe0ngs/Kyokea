@@ -1,6 +1,6 @@
 import '../css/Header.css'
-import logo from '../../image/logo.png';
-import {BrowserRouter as Router, Link} from 'react-router-dom';
+import logo from '../image/logo.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -10,14 +10,14 @@ const Header = () => {
                     <img src={logo} alt='로고' />
                 </div>
 
-                <nav>
+                <div>
                     <ul>
                         <li><Link to={"/"}>HOME</Link></li>
-                        <li><a href="/about">ABOUT</a></li>
-                        <li><a href="/explore">EXPLORE</a></li>
-                        <li>MORE</li>
+                        <li><Link to={"/about"}>ABOUT</Link></li>
+                        <li><Link to={"/explore"}>EXPLORE</Link></li>
+                        <li><Link to={"/"}>MORE</Link></li>
                     </ul>
-                </nav>
+                </div>
 
                 <div>
                     SIGN IN / SIGN UP

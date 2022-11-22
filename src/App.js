@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Layout from './components/Layout/Layout';
+import Layout from './js/Layout';
 import React from 'react';
 import ReactDom from 'react-dom';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';

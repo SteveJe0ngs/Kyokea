@@ -16,7 +16,7 @@ ul {
     list-style: none;
 }
 
-Link {
+a {
     color: #474747;
     text-decoration: none;
     outline: none;
@@ -29,5 +29,5 @@ img{
 }
 
 .layout {
-    padding-top: 80px;
+    padding-top: 70px;
 }
