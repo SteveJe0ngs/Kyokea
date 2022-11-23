@@ -1,6 +1,6 @@
 import Footer from "./Footer";
 import Header from "./Header";
-import '../css/styles.css'
+import '../css/Main.css'
 import React from "react";
 import Grid from "./Grid";
 
