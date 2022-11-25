@@ -7,15 +7,15 @@ const Header = () => {
         <header className='header'>
             <div className='contents'>
                 <div>
-                    <img src={logo} alt='로고' />
+                    <Link to={"/"}><img src={logo} alt='로고' /></Link>
                 </div>
 
                 <div>
                     <ul>
                         <li><Link to={"/"}>HOME</Link></li>
                         <li><Link to={"/about"}>ABOUT</Link></li>
+                        <li><Link to={"/analysis"}>ANALYSIS</Link></li>
                         <li><Link to={"/explore"}>EXPLORE</Link></li>
-                        <li><Link to={"/main"}>MORE</Link></li>
                     </ul>
                 </div>
 

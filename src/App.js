@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
-import Layout from './js/Layout';
+import Explore from './js/Explore';
+import LandingPage from './js/LandingPage';
 import React from 'react';
-import ReactDom from 'react-dom';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
 const Example = () => {
@@ -18,8 +17,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Layout />} />
-            <Route path="/main" element={<Example />} />
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/about" element={<Explore />} />
+            <Route path="/analysis" element={<Explore />} />
+            <Route path="/explore" element={<Explore />} />
           </Routes>
       </BrowserRouter>
     </div>

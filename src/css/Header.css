@@ -24,12 +24,13 @@
     align-items: center;
 }
 
-.contents {
-    display: flex;
-    width: 96%;
-    max-width: 1200px;
-    height: 100%;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
+.header ul>li:hover {
+    transition: all 0.3s linear;
+    transform: scale(1.1);
 }
+
+.header img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
