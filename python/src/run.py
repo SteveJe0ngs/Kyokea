@@ -9,7 +9,7 @@ import cv2
 import os
 
 #profs.json 불러오기
-with open('python/output/jsons/profs.json','r',encoding='UTF-8') as f:
+with open('../output/jsons/profs.json','r',encoding='UTF-8') as f:
     json_data=json.load(f)
 
 #유저 데이터 할당
