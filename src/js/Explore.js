@@ -4,35 +4,32 @@ import Header from "./Header";
 import '../css/Styles.css'
 import '../css/Grid.css'
 import { Link } from "react-router-dom";
+import items from "./items";
 
 const Grid = () => {
-    const items = [
-        '김동호', '김미량', '김은우', '김재광', 
-        '김재현', '노진아', '레이하트만', '류은석', 
-        '민무홍', '박천수', '안성진', '양정아', 
-        '유철', '윤상운', '전대석', '제프리모지즈', 
-        '조디바론', '토머스존', '한신일', '한옥영', 
-        '황숙희'];
-
     return (
-        <div className='containerFrame'>
+        <div className='contentsFrame'>
             <div className='container'>
-                {items.map((item) => (
+                {items.map((items) => (
                     <div className='item'>
-                        <Link to={`/explore/${item}`}><p>{item}</p></Link>
+                        <Link to={`/explore/${items.name}`}><p className="gridText">{items.name}</p></Link>
                     </div>
                 ))}
             </div>
         </div>
     );
-}
+};
 
 const Explore = () => {
     return (
         <div className='layout'>
-            <Header/>
+            <Header />
+            <div className="title fadein">
+                <p>EXPLORE</p>
+                <p><h2>교수님 스타일 둘러보기</h2></p>
+            </div>
             <Grid />
-            <Footer/>
+            <Footer />
         </div>
     )
 }
