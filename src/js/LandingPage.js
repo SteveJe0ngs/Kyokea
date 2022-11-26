@@ -3,7 +3,7 @@ import Header from "./Header";
 import '../css/Styles.css'
 import '../css/Main.css'
 import React from "react";
-import mainImgae from "../image/LandingPage.gif"
+import mainImage from "../image/LandingPage.gif"
 import { Link } from "react-router-dom";
 
 const Main = () => {
@@ -22,7 +22,7 @@ const Main = () => {
                 <Link to={"/explore"}><p className="mainButton shadow">교수님 스타일 둘러보기</p></Link>
                 <Link to={"/analysis"}><p className="mainButton shadow">나와 딱 맞는 교수님 찾기</p></Link>
             </div>
-            <img src={mainImgae} alt="Main Image" />
+            <img src={mainImage} alt="Main" />
         </div>
     )
 }

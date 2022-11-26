@@ -45,8 +45,8 @@
 }
 
 .nextButton:hover {
-    transition: all 0.3s linear;
-    transform: scale(1.1);
+    transition: all 0.15s linear;
+    transform: scale(1.05);
 }
 
 .additionalText {
@@ -55,6 +55,6 @@
     margin-top: 30px;
 }
 
-.shadow{
+.shadow {
     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.6);
 }
