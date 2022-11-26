@@ -28,7 +28,7 @@ const Detail = () => {
                         <h3>▶ 시험 : {x}</h3>
                         <h3>▶ 과제 : {y}</h3>
                         <h3>▶ 팀플 : {z}</h3>
-                        <p className="additionalText">* 해당 수치는 에브리타임의 강의평을 크롤링하여 모은 데이터를 wordRank 라이브러리를 활용하여 가중치 분석한 값입니다.</p>
+                        <p className="additionalText">* 해당 수치는 에브리타임의 강의평을 크롤링하여 모은 데이터를 KRwordRank 라이브러리를 활용하여 가중치 분석한 값입니다.</p>
                         <Link to={`/explore/${next}`}><p className="nextButton shadow">이 교수님과 가장 스타일이 비슷한 다른 교수님</p></Link>
                     </div>
                 </div>
