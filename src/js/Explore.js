@@ -3,25 +3,23 @@ import Footer from "./Footer";
 import Header from "./Header";
 import '../css/Styles.css'
 import '../css/Grid.css'
+import { Link } from "react-router-dom";
 
 const Grid = () => {
     const items = [
-        1, 2, 3, 4, 
-        5, 6, 7, 8, 
-        9, 10, 11, 12, 
-        13, 14, 15, 16, 
-        17, 18, 19, 20,
-        21, 22, 23, 24,
-        25, 26, 27, 28,
-        29, 30, 31, 32
-    ];
+        '김동호', '김미량', '김은우', '김재광', 
+        '김재현', '노진아', '레이하트만', '류은석', 
+        '민무홍', '박천수', '안성진', '양정아', 
+        '유철', '윤상운', '전대석', '제프리모지즈', 
+        '조디바론', '토머스존', '한신일', '한옥영', 
+        '황숙희'];
 
     return (
-        <div className='cotainerFrame'>
+        <div className='containerFrame'>
             <div className='container'>
                 {items.map((item) => (
                     <div className='item'>
-                        {item}
+                        <Link to={`/explore/${item}`}><p>{item}</p></Link>
                     </div>
                 ))}
             </div>
