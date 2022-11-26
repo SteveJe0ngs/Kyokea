@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import '../css/Styles.css'
 import '../css/Analysis.css'
+import { Link } from "react-router-dom";
 
 const Analysis = () => {
     const [x, setX] = useState(0);
@@ -21,18 +22,29 @@ const Analysis = () => {
         setZ(e.target.value);
     };
 
-    const onClick = () => {
-        const spawn = require('child_process').spawn;
-        const result = spawn('python3', ['print.py'],);
-
-        result.stdout.on('data', function (data) {
-            console.log(data.toString());
-        });
-
-        result.stderr.on('data', function (data) {
-            console.log(data.toString());
-        });
-    };
+    // const export2txt = () => {
+    //     const originalData = {
+    //         members: [{
+    //             value: x,
+    //         },
+    //         {
+    //             value: y
+    //         },
+    //         {
+    //             value: z
+    //         }
+    //         ]
+    //     };
+    
+    //     const a = document.createElement("a");
+    //     a.href = URL.createObjectURL(new Blob([JSON.stringify(originalData, null, 2)], {
+    //         type: "text/plain"
+    //     }));
+    //     a.setAttribute("download", "data.txt");
+    //     document.body.appendChild(a);
+    //     a.click();
+    //     document.body.removeChild(a);
+    // }
 
     return (
         <div className='layout'>
@@ -51,11 +63,10 @@ const Analysis = () => {
                         <p>팀플에 대한 나의 선호도(0~150)</p>
                         <input type="text" placeholder="0~150" onChange={onChangeZ} />
                         <br />
-                        <button className="analysisShadow" onClick={onClick}>
-                            F I N D !
-                        </button>
+                        <Link to={"/analysis/result"}>
+                        <p className="analysisButton analysisShadow">F I N D !</p>
+                        </Link>
                     </div>
-
                     <div className="analysisResult">
                         <p>X값: {x}</p>
                         <p>Y값: {y}</p>
