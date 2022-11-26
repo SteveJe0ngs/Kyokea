@@ -7,12 +7,14 @@ import { Link } from "react-router-dom";
 import items from "./items";
 
 const Grid = () => {
+    const item = Object.keys(items);
+
     return (
         <div className='contentsFrame'>
             <div className='container'>
-                {items.map((items) => (
+                {item.map((item) => (
                     <div className='item'>
-                        <Link to={`/explore/${items.name}`}><p className="gridText">{items.name}</p></Link>
+                        <Link to={`/explore/${item}`}><p className="gridText">{item}</p></Link>
                     </div>
                 ))}
             </div>
