@@ -13,9 +13,9 @@ with open('src/python/output/jsons/profs.json', 'r', encoding='UTF-8') as f:
     json_data = json.load(f)
 
 #유저 데이터 할당
-a = 0
-b = 0
-c = 0
+a = 50
+b = 50
+c = 50
 user_data = [a, b, c]
 
 #거리 계산 함수
