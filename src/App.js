@@ -6,6 +6,7 @@ import Result from './js/Result';
 import React from 'react';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Analysis from './js/Analysis';
+import About from './js/About';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <BrowserRouter>
           <Routes>
             <Route path="/" element={<LandingPage />} />
-            <Route path="/about" element={<LandingPage />} />
+            <Route path="/about" element={<About />} />
             <Route path="/analysis" element={<Analysis />} />
             <Route path="/analysis/result" element={<Result />} />
             <Route path="/explore" element={<Explore />} />
