@@ -4,14 +4,6 @@ import LandingPage from './js/LandingPage';
 import React from 'react';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
-const Example = () => {
-  return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
-}
-
 function App() {
   return (
     <div className="App">
