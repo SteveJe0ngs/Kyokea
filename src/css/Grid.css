@@ -1,12 +1,8 @@
-.containerFrame {
-  display: flex;
-  justify-content: center;
-}
-
 .container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  margin: 30px;
+  margin: 60px;
+  margin-top: 0px;
   padding: 30px;
   width: 100%;
   background: #eaeaf1;
@@ -14,8 +10,20 @@
 }
 
 .item {
-  margin: 5px;
+  margin: 10px;
   padding: 5px;
   background: #ffffff;
-  height: 200px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.item:hover {
+  transition: all 0.3s linear;
+  transform: scale(1.1);
+}
+
+.gridText {
+  font-size: 20px;
+  text-align: center;
+  line-height: 100px;
 }

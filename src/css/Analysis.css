@@ -1,0 +1,9 @@
+.analysisContents{
+    display: flex;
+    margin: 60px;
+    margin-top: 0px;
+    padding: 30px;
+    width: 100%;
+    background: #eaeaf1;
+    justify-content: center;
+  }
