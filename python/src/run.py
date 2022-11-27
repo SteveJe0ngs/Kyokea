@@ -8,6 +8,9 @@ import numpy as np
 import cv2
 import os
 
+import time
+start=time.time()
+
 #profs.json 불러오기
 with open('python/output/jsons/profs.json','r',encoding='UTF-8') as f:
     json_data=json.load(f)
@@ -76,3 +79,5 @@ for image in images:
     video.write(cv2.imread(os.path.join(image_folder, image)))  
 cv2.destroyAllWindows()
 video.release()
+
+print("실행 시간: ",time.time()-start)
