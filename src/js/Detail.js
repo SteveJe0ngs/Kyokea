@@ -8,9 +8,10 @@ import items from "./items";
 
 const Detail = () => {
     let { name } = useParams();
-    const x = items[name].x;
-    const y = items[name].y;
-    const z = items[name].z;
+    
+    const x = Math.round(items[name].x * 1000) / 1000;
+    const y = Math.round(items[name].y * 1000) / 1000;
+    const z = Math.round(items[name].z * 1000) / 1000;
     const next = items[name].min_prof
 
     return (

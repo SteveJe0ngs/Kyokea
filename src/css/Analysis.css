@@ -1,9 +1,73 @@
-.analysisContents{
-    display: flex;
-    margin: 60px;
-    margin-top: 0px;
-    padding: 30px;
-    width: 100%;
-    background: #eaeaf1;
-    justify-content: center;
-  }
+.analysisContents {
+  display: flex;
+  margin: 60px;
+  margin-top: 0px;
+  padding: 30px;
+  width: 100%;
+  background: #eaeaf1;
+  justify-content: center;
+}
+
+.analysisInput {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.analysisContents input {
+  margin-bottom: 25px;
+  width: 300px;
+}
+
+.analysisButton {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 40px;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(85, 83, 99);
+}
+
+.analysisButton:hover {
+  transition: all 0.1s linear;
+  transform: scale(1.03);
+}
+
+.analysisShadow {
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.analysisResult {
+  margin-top: 20px;
+  width: 200px;
+}
+
+.analysisContents img {
+  margin-right: 50px;
+  width: 700px;
+  height: 480px;
+  object-fit: cover;
+}
+
+.analysisContents h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.analysisContents h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.analysisContents h3 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.analysisText {
+  margin-top: 30px;
+  width: 400px;
+}
