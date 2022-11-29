@@ -35,7 +35,7 @@ const Result = () => {
                         <h2>교수 스타일</h2>
                         <h3>▶ 시험 : {x}</h3>
                         <h3>▶ 과제 : {y}</h3>
-                        <h3>▶ 팀플 : {z}</h3>
+                        <h3>▶ 발표 : {z}</h3>
                         <br />
                         <Link to={'/analysis'}><p className="nextButton shadow">이전 화면</p></Link>
                     </div>

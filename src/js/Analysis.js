@@ -56,11 +56,11 @@ const Analysis = () => {
             <div className="contentsFrame">
                 <div className="analysisContents">
                     <div className="analysisInput">
-                        <p>시험에 대한 나의 선호도(0~150)</p>
+                        <p>▶ 시험에 대한 나의 선호도(0~150)</p>
                         <input type="text" placeholder="0~150" onChange={onChangeX} />
-                        <p>과제에 대한 나의 선호도(0~150)</p>
+                        <p>▶ 과제에 대한 나의 선호도(0~150)</p>
                         <input type="text" placeholder="0~150" onChange={onChangeY} />
-                        <p>팀플에 대한 나의 선호도(0~150)</p>
+                        <p>▶ 발표에 대한 나의 선호도(0~150)</p>
                         <input type="text" placeholder="0~150" onChange={onChangeZ} />
                         <br />
                         <Link to={"/analysis/result"}>
