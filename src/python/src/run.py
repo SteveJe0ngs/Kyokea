@@ -12,10 +12,10 @@ import os
 with open('src/python/output/jsons/profs.json', 'r', encoding='UTF-8') as f:
     json_data = json.load(f)
 
-#유저 데이터 할당
-a = 50
-b = 50
-c = 50
+#여기에 본인의 데이터를 입력해주세요.
+a = 50  #시험에 대한 본인의 선호도(0~150)
+b = 50  #과제에 대한 본인의 선호도(0~150)
+c = 50  #발표에 대한 본인의 선호도(0~150)
 user_data = [a, b, c]
 
 #거리 계산 함수
