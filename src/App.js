@@ -19,6 +19,7 @@ function App() {
             <Route path="/analysis/result" element={<Result />} />
             <Route path="/explore" element={<Explore />} />
             <Route path="/explore/:name" element={<Detail />} />
+            <Route path="*" element={<LandingPage />} />
           </Routes>
       </BrowserRouter>
     </div>

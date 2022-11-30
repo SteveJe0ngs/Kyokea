@@ -24,7 +24,7 @@ const About = () => {
                         <h1>안정후</h1>
                         <h2>백 엔드 & NLP 가중치 분석</h2>
                         <p>----------------------------</p>
-                        <img src="안정후.png" alt="안정후" />
+                        <img src="아몬드.png" alt="안정후" />
                     </div>
                     <div className="aboutPerson">
                         <h1>윤태현</h1>
